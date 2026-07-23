@@ -16,6 +16,305 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
 .hdr p{font-size:13px;color:var(--t2)}
 .logo{display:inline-block;width:36px;height:36px;border-radius:10px;background:var(--tl);color:#fff;font-size:18px;line-height:36px;text-align:center;margin-bottom:12px}
 .fg{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:1.5rem 0}
+.fc{border:.5px solid var(--b1);border-radius:12px;padding:1.2rem;cursor:pointer;background:var(--s1)}
+.fc:hover{border-color:var(--b2);background:var(--s2)}
+.fc.sel{border-color:var(--tl);background:var(--s2)}
+.fi{font-size:24px;margin-bottom:10px}
+.fl{font-size:13px;font-weight:600;margin-bottom:4px}
+.fs{font-size:11px;color:var(--t2);line-height:1.5}
+.stp{display:flex;align-items:center;margin:1.5rem 0 .5rem}
+.si{display:flex;align-items:center;flex:1}
+.sd{width:28px;height:28px;border-radius:50%;border:.5px solid var(--b2);background:var(--s1);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:var(--t3);flex-shrink:0;cursor:pointer}
+.sd.act{background:var(--tl);border-color:var(--tl);color:#fff}
+.sd.dn{background:var(--tl2);border-color:var(--tl2);color:#fff}
+.sl{flex:1;height:.5px;background:var(--b2)}.sl.dn{background:var(--tl)}
+.slb{display:flex;justify-content:space-between;margin-bottom:1.5rem}
+.slb span{font-size:10px;color:var(--t3);text-align:center;flex:1}
+.slb span.act{color:var(--tl);font-weight:500}
+.swb{display:flex;align-items:center;gap:8px;margin-bottom:1.2rem;padding:8px 14px;border:.5px solid var(--b1);border-radius:8px;background:var(--s1)}
+.swb span{font-size:12px;color:var(--t2);flex:1}
+.swbtn{font-size:11px;color:var(--tl);cursor:pointer;border:none;background:none;font-family:inherit}
+.sp{background:var(--s1);border:.5px solid var(--b1);border-radius:14px;padding:1.4rem;margin-bottom:1.2rem}
+.st{font-size:14px;font-weight:600;margin-bottom:4px}
+.sd2{font-size:12px;color:var(--t2);margin-bottom:1.2rem;line-height:1.6}
+.fld{margin-bottom:1.1rem}
+.fld label{display:block;font-size:12px;font-weight:500;color:var(--t2);margin-bottom:5px}
+.fld input,.fld textarea{width:100%;font-family:inherit;font-size:13px;color:var(--t1);background:var(--s2);border:.5px solid var(--b2);border-radius:var(--r);padding:9px 12px;resize:vertical}
+.fld input:focus,.fld textarea:focus{outline:none;border-color:var(--tl)}
+.fld textarea{min-height:78px;line-height:1.5}
+.fld .ht{font-size:11px;color:var(--t3);margin-top:4px}
+.pg{display:flex;flex-wrap:wrap;gap:7px;margin-top:5px}
+.pil{padding:5px 12px;border:.5px solid var(--b2);border-radius:20px;font-size:11px;cursor:pointer;color:var(--t2);background:var(--s2);user-select:none}
+.pil.on{background:var(--tl);border-color:var(--tl);color:#fff;font-weight:500}
+.imo{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:8px 0 1rem}
+.imc{border:.5px solid var(--b2);border-radius:10px;padding:12px 10px;cursor:pointer;background:var(--s2);text-align:center}
+.imc.sel{border-color:var(--tl);background:var(--s1)}
+.imi{font-size:20px;margin-bottom:6px}
+.iml{font-size:12px;font-weight:600;margin-bottom:2px}
+.ims{font-size:10px;color:var(--t2);line-height:1.4}
+.isf{display:none;margin-top:10px}.isf.vis{display:block}
+.ie{display:flex;gap:8px;margin-bottom:8px;align-items:flex-start}
+.ie .iew{flex:1;display:flex;flex-direction:column;gap:5px}
+.ie input{font-family:inherit;font-size:12px;background:var(--s2);border:.5px solid var(--b2);border-radius:6px;padding:7px 10px;color:var(--t1)}
+.ie input:focus{outline:none;border-color:var(--tl)}
+.aib{font-size:11px;color:var(--tl);border:.5px solid var(--tl);border-radius:6px;padding:5px 12px;cursor:pointer;background:none;font-family:inherit;margin-top:4px}
+.rib{font-size:12px;color:var(--t3);border:none;background:none;cursor:pointer;font-family:inherit}
+.cg{background:var(--s2);border:.5px solid var(--b1);border-radius:8px;padding:12px 14px;margin-top:10px}
+.cg h4{font-size:12px;font-weight:600;margin-bottom:8px}
+.cg ol{font-size:11px;color:var(--t2);padding-left:1.2rem;line-height:2}
+.pb{background:var(--s2);border:.5px solid var(--tl);border-radius:12px;padding:1.1rem;margin-top:1rem}
+.pbl{font-size:11px;font-weight:600;color:var(--tl);margin-bottom:8px;display:flex;align-items:center;justify-content:space-between;text-transform:uppercase;letter-spacing:.5px}
+.cb{font-size:11px;border:.5px solid var(--b2);border-radius:6px;padding:3px 10px;cursor:pointer;background:var(--s1);color:var(--t2);font-family:inherit;text-transform:none;letter-spacing:0}
+.cb.cp{color:var(--tl);border-color:var(--tl)}
+.pt{font-size:12px;line-height:1.9;color:var(--t1);white-space:pre-wrap;word-break:break-word}
+.pi{font-size:12px;color:var(--t3);font-style:italic}
+.nr{display:flex;gap:8px;margin-top:1.2rem;justify-content:space-between}
+.btn{padding:9px 20px;border-radius:var(--r);font-size:13px;font-family:inherit;cursor:pointer;border:.5px solid var(--b2);font-weight:500}
+.bp{background:var(--tl);border-color:var(--tl);color:#fff}
+.bp:hover{background:var(--tl2)}
+.bg2{background:var(--s1);color:var(--t2)}
+.bg2:hover{background:var(--s2);color:var(--t1)}
+.btn:disabled{opacity:.35;cursor:not-allowed}
+.ro{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.ropt{padding:10px 12px;border:.5px solid var(--b2);border-radius:8px;font-size:12px;cursor:pointer;background:var(--s2);color:var(--t2);text-align:left}
+.ropt:hover,.ropt.on{border-color:var(--tl);color:var(--tl);background:var(--s1)}
+.dv{height:.5px;background:var(--b1);margin:1.1rem 0}
+.tip{font-size:11px;color:var(--t2);padding:8px 12px;background:var(--s2);border-left:2px solid var(--tl);border-radius:0 6px 6px 0;margin-top:10px;line-height:1.6}
+.bdg{display:inline-block;font-size:10px;padding:2px 8px;border-radius:10px;background:rgba(29,158,117,.13);color:var(--tl);font-weight:600;margin-left:6px;border:.5px solid var(--tl)}
+ol.ds{font-size:13px;line-height:2.2;padding-left:1.3rem;color:var(--t2)}
+@media(max-width:540px){.fg,.imo,.ro{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="app">
+<div class="screen active" id="sf">
+  <div class="hdr"><div class="logo">&#10022;</div><h1>What are you building?</h1><p>Choose the closest fit - you can switch later without losing your work</p></div>
+  <div class="fg">
+    <div class="fc" data-fork="business"><div class="fi">&#128188;</div><div class="fl">Business or freelance</div><div class="fs">A site for your work, services, or products</div></div>
+    <div class="fc" data-fork="personal"><div class="fi">&#10022;</div><div class="fl">Personal project</div><div class="fs">A blog, hobby, passion project, or portfolio</div></div>
+    <div class="fc" data-fork="event"><div class="fi">&#9711;</div><div class="fl">Event or gathering</div><div class="fs">A page for something happening - online or in person</div></div>
+  </div>
+  <div style="text-align:center;margin-top:1rem"><button class="btn bp" id="fnb" disabled>Continue &#8594;</button></div>
+</div>
+<div class="screen" id="ss">
+  <div class="swb"><span id="swl">Building for: -</span><button class="swbtn" id="swb">Switch type &#8635;</button></div>
+  <div class="stp" id="sdots"></div>
+  <div class="slb" id="slabs"></div>
+  <div id="sc"></div>
+  <div class="nr"><button class="btn bg2" id="bk">&#8592; Back</button><button class="btn bp" id="nx">Next &#8594;</button></div>
+</div>
+</div>
+<script>
+var NL=String.fromCharCode(10);
+var S={fork:null,stg:0,flds:{},feels:[],rp:null,imo:null,imgs:[{d:"",u:""}],tmr:null};
+var SH=["description","feeling","fear"];
+var FK={
+business:{lbl:"Business / freelance",stgs:["About","Content","Build","Refine","Launch"],fields:[
+{id:"description",lbl:"What does your business or service actually do?",t:"ta",ht:"Plain language - what do you do for people?",ph:"e.g. I help small restaurants create menus and marketing that match their actual food"},
+{id:"visitor",lbl:"Who is your most likely visitor - describe their situation",t:"ta",ht:"Not demographics. What are they feeling when they land here?",ph:"e.g. A cafe owner tired of designers who never eat at places like theirs"},
+{id:"cta",lbl:"What do you want them to do on this site?",t:"tx",ph:"e.g. Book a discovery call / Buy the product / Send me an email"},
+{id:"differentiator",lbl:"What makes you different from someone doing the same thing?",t:"ta",ht:"Avoid passionate and experienced - what is specific to you?",ph:"e.g. I only work with food businesses and I always eat at the place first"},
+{id:"feeling",lbl:"How should the site feel? Pick up to 2",t:"pills",opts:["Trustworthy","Bold","Warm","Minimal","Energetic","Expert","Approachable","Premium"]},
+{id:"fear",lbl:"What do you NOT want this site to come across as?",t:"tx",ht:"This shapes tone more than any positive description",ph:"e.g. Generic, corporate, or like every other freelancer site"}]},
+personal:{lbl:"Personal project",stgs:["About","Content","Build","Refine","Share"],fields:[
+{id:"description",lbl:"What is this project about, and what drew you to it?",t:"ta",ht:"Be specific about subject and angle",ph:"e.g. I document disappearing street food stalls before they close permanently"},
+{id:"visitor",lbl:"Who would genuinely enjoy or care about this?",t:"ta",ht:"Who finds this interesting and why?",ph:"e.g. People who travel for food, urban historians"},
+{id:"cta",lbl:"What do you want them to feel or take away?",t:"tx",ph:"e.g. Feel like they were there / Follow along / Reach out with a story"},
+{id:"differentiator",lbl:"What is your specific angle or voice on this subject?",t:"ta",ht:"What makes your take unique?",ph:"e.g. I always ask the owner: what will you miss most?"},
+{id:"feeling",lbl:"How should the site feel? Pick up to 2",t:"pills",opts:["Intimate","Bold","Warm","Minimal","Curious","Raw","Calm","Vivid"]},
+{id:"fear",lbl:"What do you NOT want this to come across as?",t:"tx",ph:"e.g. A vanity project or self-important"}]},
+event:{lbl:"Event or gathering",stgs:["About","Content","Build","Refine","Go live"],fields:[
+{id:"description",lbl:"What is this event and what happens there?",t:"ta",ht:"Name and one-sentence description",ph:"e.g. A monthly Sunday morning run ending at a local cafe"},
+{id:"visitor",lbl:"Who belongs at this event?",t:"ta",ht:"Not age or job - what kind of person fits here?",ph:"e.g. People who want to move without it feeling like a performance"},
+{id:"cta",lbl:"What do you want them to do on this page?",t:"tx",ph:"e.g. RSVP / Sign up / Just find when and where"},
+{id:"differentiator",lbl:"What makes this worth attending over staying home?",t:"ta",ht:"What can they not get elsewhere?",ph:"e.g. Route changes monthly, group small enough to actually talk"},
+{id:"feeling",lbl:"How should the page feel? Pick up to 2",t:"pills",opts:["Welcoming","Energetic","Calm","Community","Low-key","Exciting","Inclusive","No-pressure"]},
+{id:"fear",lbl:"What do you NOT want this to come across as?",t:"tx",ph:"e.g. Cliquey or intense"}]}};
+function mk(t,c){var e=document.createElement(t);if(c)e.className=c;return e;}
+function g(id){return(S.flds[id]||"").trim();}
+function fe(){return S.feels.length?S.feels.join(" and "):null;}
+function pBox(txt,lbl){
+var b=mk("div","pb");var head=mk("div","pbl");head.textContent=lbl||"Prompt to copy";
+var cb=mk("button","cb");cb.textContent="Copy";cb._r=txt||"";
+cb.addEventListener("click",function(){navigator.clipboard.writeText(cb._r).then(function(){cb.textContent="Copied";cb.classList.add("cp");setTimeout(function(){cb.textContent="Copy";cb.classList.remove("cp");},1800);});});
+head.appendChild(cb);b.appendChild(head);
+var ok=txt&&txt.trim().length>20;
+var body=mk("div",ok?"pt":"pi");body.textContent=ok?txt:"Fill in the fields above - the prompt builds as you type.";
+b.appendChild(body);return b;}
+function selFork(f,el){S.fork=f;document.querySelectorAll(".fc").forEach(function(c){c.classList.remove("sel");});el.classList.add("sel");document.getElementById("fnb").disabled=false;}
+function goStepper(){document.getElementById("sf").classList.remove("active");document.getElementById("ss").classList.add("active");document.getElementById("swl").textContent="Building for: "+FK[S.fork].lbl;S.stg=0;rStp();rStg();}
+var pend=null;
+function doSwitch(){var sv={};SH.forEach(function(f){if(S.flds[f])sv[f]=S.flds[f];});if(S.feels.length)sv._f=S.feels.slice();pend=sv;document.getElementById("ss").classList.remove("active");document.getElementById("sf").classList.add("active");document.querySelectorAll(".fc").forEach(function(c){c.classList.toggle("sel",c.dataset.fork===S.fork);});document.getElementById("fnb").disabled=false;}
+function rStp(){var fk=FK[S.fork];var dt=document.getElementById("sdots");var lb=document.getElementById("slabs");dt.innerHTML="";lb.innerHTML="";
+fk.stgs.forEach(function(s,i){var dn=i<S.stg,ac=i===S.stg;
+var it=mk("div","si");var dot=mk("div","sd"+(dn?" dn":"")+(ac?" act":""));dot.textContent=dn?"✓":String(i+1);
+(function(idx){dot.addEventListener("click",function(){if(idx<=S.stg){S.stg=idx;rStp();rStg();}});})(i);
+it.appendChild(dot);if(i<fk.stgs.length-1){it.appendChild(mk("div","sl"+(dn?" dn":"")));}dt.appendChild(it);
+var l=mk("span",ac?"act":"");l.textContent=s;lb.appendChild(l);});
+document.getElementById("bk").style.visibility=S.stg===0?"hidden":"visible";
+document.getElementById("nx").textContent=S.stg===FK[S.fork].stgs.length-1?"Finish ✓":"Next →";}
+function goNext(){if(S.stg<FK[S.fork].stgs.length-1){S.stg++;rStp();rStg();}}
+function goBack(){if(S.stg>0){S.stg--;rStp();rStg();}}
+var upd=function(){};
+function rStg(){var c=document.getElementById("sc");c.innerHTML="";if(S.stg===0)rIn(c);else if(S.stg===1)rCo(c);else if(S.stg===2)rBu(c);else if(S.stg===3)rRe(c);else rLa(c);}
+function rIn(c){var fk=FK[S.fork];var p=mk("div","sp");
+var t1=mk("div","st");t1.textContent="Tell us about your project";p.appendChild(t1);
+var d1=mk("div","sd2");d1.textContent="Every prompt below is built from your answers. The more specific, the less generic the output.";p.appendChild(d1);
+fk.fields.forEach(function(f){var fd=mk("div","fld");var lab=mk("label");lab.textContent=f.lbl;fd.appendChild(lab);
+if(f.t==="pills"){var pg=mk("div","pg");f.opts.forEach(function(o){var pil=mk("span","pil"+(S.feels.indexOf(o)>=0?" on":""));pil.textContent=o;
+pil.addEventListener("click",function(){if(S.feels.indexOf(o)>=0){S.feels=S.feels.filter(function(x){return x!==o;});pil.classList.remove("on");}else if(S.feels.length<2){S.feels.push(o);pil.classList.add("on");}upd();});
+pg.appendChild(pil);});fd.appendChild(pg);}
+else{var el=document.createElement(f.t==="ta"?"textarea":"input");if(f.t==="tx")el.type="text";el.placeholder=f.ph||"";if(S.flds[f.id])el.value=S.flds[f.id];
+el.addEventListener("input",function(){S.flds[f.id]=el.value;upd();});fd.appendChild(el);
+if(f.ht){var h=mk("div","ht");h.textContent=f.ht;fd.appendChild(h);}}
+p.appendChild(fd);});
+c.appendChild(p);
+var pv=mk("div");var pvh=mk("div");pvh.style.cssText="font-size:12px;font-weight:500;color:var(--t2);margin-bottom:6px";pvh.textContent="Your Stage 1 prompt - updates as you type";pv.appendChild(pvh);
+pv.appendChild(pBox(a1()));c.appendChild(pv);
+upd=function(){clearTimeout(S.tmr);S.tmr=setTimeout(function(){var old=pv.querySelector(".pb");if(old){pv.replaceChild(pBox(a1()),old);}},400);};}
+function rCo(c){var p=mk("div","sp");
+var t=mk("div","st");t.textContent="Stage 2 - Write your content first";p.appendChild(t);
+var d=mk("div","sd2");d.textContent="Use this prompt in Claude or ChatGPT to generate the words for your site before building anything.";p.appendChild(d);
+p.appendChild(pBox(a2()));
+var tip=mk("div","tip");tip.textContent="After you get a result: does the headline sound like you? If not, use the Stage 4 refinement prompts.";p.appendChild(tip);
+c.appendChild(p);
+var r=mk("div","sp");var rt=mk("div","st");rt.textContent="Content refinement prompts";r.appendChild(rt);
+var rd=mk("div","sd2");rd.textContent="If the first result misses, use one of these follow-ups in the same conversation.";r.appendChild(rd);
+cRefs().forEach(function(x){r.appendChild(pBox(x.p,x.l));r.appendChild(mk("div","dv"));});
+c.appendChild(r);}
+function rBu(c){var p=mk("div","sp");
+var t=mk("div","st");t.textContent="Stage 3 - Build your site";p.appendChild(t);
+var d=mk("div","sd2");d.textContent="Paste your Stage 2 content into this prompt. It tells the AI the exact structure, tone, and layout to use.";p.appendChild(d);
+var ih=mk("div");ih.style.cssText="font-size:13px;font-weight:600;margin-bottom:8px";ih.textContent="Do you have images to include?";
+var bd=mk("span","bdg");bd.textContent="Optional";ih.appendChild(bd);p.appendChild(ih);
+var imo=mk("div","imo");
+[["describe","🔍","Describe it","AI finds a free matching image"],["placeholder","⬚","Add later","Build with labelled placeholders"],["url","🔗","I have a link","Paste your hosted image URL"]].forEach(function(o){
+var card=mk("div","imc"+(S.imo===o[0]?" sel":""));
+var i1=mk("div","imi");i1.textContent=o[1];var i2=mk("div","iml");i2.textContent=o[2];var i3=mk("div","ims");i3.textContent=o[3];
+card.appendChild(i1);card.appendChild(i2);card.appendChild(i3);
+card.addEventListener("click",function(){S.imo=o[0];imo.querySelectorAll(".imc").forEach(function(x){x.classList.remove("sel");});card.classList.add("sel");
+p.querySelectorAll(".isf").forEach(function(f){f.classList.remove("vis");});
+var tgt=p.querySelector("[data-sub="+o[0]+"]");if(tgt)tgt.classList.add("vis");rfB();});
+imo.appendChild(card);});
+p.appendChild(imo);
+[["describe","Describe each image - the AI finds a free match from Unsplash.","e.g. Warm cafe interior - hero background"],["placeholder","Describe what image belongs in each section.","e.g. Team photo - About section"],["url","Paste the URL of each image and describe where it goes.",""]].forEach(function(sub){
+var sf=mk("div","isf"+(S.imo===sub[0]?" vis":""));sf.dataset.sub=sub[0];
+var sd=mk("div");sd.style.cssText="font-size:12px;color:var(--t2);margin-bottom:8px";sd.textContent=sub[1];sf.appendChild(sd);
+var addBtn=mk("button","aib");addBtn.textContent="+ Add another";
+function drawEntries(){sf.querySelectorAll(".ie").forEach(function(e){e.remove();});
+S.imgs.forEach(function(im,i){var w=mk("div","ie");var iw=mk("div","iew");
+if(sub[0]==="url"){var u1=document.createElement("input");u1.type="text";u1.placeholder="Image URL";u1.value=im.u;u1.addEventListener("input",function(){im.u=u1.value;rfB();});iw.appendChild(u1);
+var u2=document.createElement("input");u2.type="text";u2.placeholder="Where does it go?";u2.value=im.d;u2.addEventListener("input",function(){im.d=u2.value;rfB();});iw.appendChild(u2);}
+else{var inp=document.createElement("input");inp.type="text";inp.placeholder=sub[2];inp.value=im.d;inp.addEventListener("input",function(){im.d=inp.value;rfB();});iw.appendChild(inp);}
+w.appendChild(iw);
+var rm=mk("button","rib");rm.textContent="✕";
+rm.addEventListener("click",function(){if(S.imgs.length<=1){S.imgs[0]={d:"",u:""};}else{S.imgs.splice(i,1);}drawEntries();rfB();});
+w.appendChild(rm);sf.insertBefore(w,addBtn);});}
+addBtn.addEventListener("click",function(){S.imgs.push({d:"",u:""});drawEntries();rfB();});
+sf.appendChild(addBtn);drawEntries();
+if(sub[0]==="url"){var cg=mk("div","cg");var ch=mk("h4");ch.textContent="No link yet? Get one free in 2 minutes";cg.appendChild(ch);
+var ol=mk("ol");["Go to cloudinary.com and sign up free","Upload your photo","Copy the URL it gives you","Paste it in the field above"].forEach(function(step){var li=mk("li");li.textContent=step;ol.appendChild(li);});
+cg.appendChild(ol);sf.appendChild(cg);}
+p.appendChild(sf);});
+p.appendChild(mk("div","dv"));
+var bh=mk("div");bh.style.cssText="font-size:12px;font-weight:500;color:var(--t2);margin-bottom:4px";bh.textContent="Your build prompt - includes image instructions";p.appendChild(bh);
+var pb=pBox(a3());pb.id="bpb";p.appendChild(pb);
+c.appendChild(p);
+function rfB(){var old=document.getElementById("bpb");if(old){var nb=pBox(a3());nb.id="bpb";old.parentNode.replaceChild(nb,old);}}
+var ly=mk("div","sp");var lt=mk("div","st");lt.textContent="Refinement layers";ly.appendChild(lt);
+var ld=mk("div","sd2");ld.textContent="Run these one at a time in the same conversation after the first result.";ly.appendChild(ld);
+bRefs().forEach(function(r,i){var lh=mk("div");lh.style.cssText="font-size:11px;color:var(--t3);margin:"+(i>0?"1rem":"0")+" 0 4px";lh.textContent="Layer "+(i+2);ly.appendChild(lh);ly.appendChild(pBox(r));});
+c.appendChild(ly);}
+function rRe(c){var p=mk("div","sp");
+var t=mk("div","st");t.textContent="Stage 4 - Refine what came back";p.appendChild(t);
+var d=mk("div","sd2");d.textContent="Pick the closest description - the prompt changes based on what went wrong.";p.appendChild(d);
+var gr=mk("div","ro");
+[["generic","Too generic - could be anyone"],["tone","Tone is off"],["structure","Structure wrong or missing sections"],["wrong","Completely missed what I wanted"]].forEach(function(o){
+var b=mk("div","ropt"+(S.rp===o[0]?" on":""));b.textContent=o[1];
+b.addEventListener("click",function(){S.rp=o[0];gr.querySelectorAll(".ropt").forEach(function(x){x.classList.remove("on");});b.classList.add("on");
+var ex=p.querySelector(".pb");var nb=pBox(aRe(o[0]));if(ex){p.replaceChild(nb,ex);}else{p.appendChild(nb);}});
+gr.appendChild(b);});
+p.appendChild(gr);
+if(S.rp)p.appendChild(pBox(aRe(S.rp)));
+c.appendChild(p);}
+function rLa(c){var p=mk("div","sp");
+var t=mk("div","st");t.textContent="Stage 5 - Test before sharing";p.appendChild(t);
+var d=mk("div","sd2");d.textContent="Use this prompt to check for problems before you share the URL.";p.appendChild(d);
+p.appendChild(pBox(aTe()));c.appendChild(p);
+var dep=mk("div","sp");var dt=mk("div","st");dt.textContent="Deploy to Netlify - no code needed";dep.appendChild(dt);
+var ol=mk("ol","ds");
+["Ask the AI: Give me this as a single downloadable index.html file","Save the file to your desktop","Go to netlify.com and sign up free","Click Add new site, then Deploy manually","Drag your file into the drop zone","Your site is live - copy the link"].forEach(function(s){var li=mk("li");li.textContent=s;ol.appendChild(li);});
+dep.appendChild(ol);
+c.appendChild(dep);
+var u=mk("div","sp");var ut=mk("div","st");ut.textContent="Updating your site later";u.appendChild(ut);
+u.appendChild(pBox("Here is my current website code:"+NL+"[paste your current HTML file here]"+NL+NL+"I need to make these updates:"+NL+"[describe your changes in plain language]"+NL+NL+"Make only those changes."+NL+"Return the complete updated file."+NL+"Do not change anything I did not mention."));
+c.appendChild(u);}
+function a1(){var d=g("description"),v=g("visitor"),ct=g("cta"),df=g("differentiator"),f=fe(),fr=g("fear");
+if(!d&&!v)return"";
+var fl={business:"business or service",personal:"personal project",event:"event or gathering"}[S.fork];
+var cl={business:ct?"The one thing I want visitors to do: "+ct:"[What do you want visitors to do?]",personal:ct?"What I want visitors to feel or take away: "+ct:"[What should visitors walk away with?]",event:ct?"What I want people to do on this page: "+ct:"[RSVP / find out more / sign up?]"}[S.fork];
+var dl={business:"What makes me different",personal:"My specific angle",event:"What makes this worth attending"}[S.fork];
+return"I am building a website for a "+fl+"."+NL+NL+(d?"About the project: "+d:"[Describe your project]")+NL+NL+(v?"The person visiting this site: "+v:"[Describe who would visit]")+NL+NL+cl+NL+NL+(df?dl+": "+df:"["+dl+"]")+NL+NL+(f?"The site should feel: "+f:"[Choose 2 feeling words above]")+NL+(fr?"It should NOT come across as: "+fr:"[What do you want to avoid?]")+NL+NL+"With this context, help me understand:"+NL+"1. What is the single most important thing this site needs to communicate in the first 5 seconds?"+NL+"2. What sections should this site include, and in what order?"+NL+"3. What tone of voice should the writing use?";}
+function a2(){var d=g("description"),v=g("visitor"),ct=g("cta"),df=g("differentiator"),f=fe(),fr=g("fear");
+var bF={business:{j:"website copy for a business",hl:df?"a headline that leads with: "+df+" - not a generic claim":"[your differentiator]",sb:v?"a subheadline that speaks directly to someone who is: "+v:"[visitor situation]",ab:"an about section that sounds "+(f||"[feeling words]")+" - avoid sounding "+(fr||"[what to avoid]"),pr:"three proof points that show your differentiator without using: professional, experienced, passionate",ct:ct?"a CTA button label for: "+ct:"[your call to action]"},
+personal:{j:"a personal project page",hl:df?"a headline that captures: "+df:"[your specific angle]",sb:v?"a subheadline that speaks to: "+v:"[who would care]",ab:"an about section that sounds "+(f||"[feeling words]")+" and avoids "+(fr||"[what to avoid]"),pr:"three lines that show why this project exists - specific, not generic",ct:ct?"a closing invitation for: "+ct:"[what you want them to feel or do]"},
+event:{j:"an event page",hl:d?"a headline for: "+d.split(".")[0]:"[event name and one-liner]",sb:v?"a subheadline for someone who: "+v:"[who this is for]",ab:"a what-is-this section that sounds "+(f||"[feeling words]")+" and does not feel "+(fr||"[what to avoid]"),pr:df?"three reasons to attend, built around: "+df:"[what makes this worth going to]",ct:ct?"a clear action statement for: "+ct:"[RSVP / sign up / find out more]"}}[S.fork];
+return"You are writing content for "+bF.j+"."+NL+NL+(d?"Context: "+d:"[Fill in your project description in Stage 1]")+NL+(v?"Visitor: "+v:"")+NL+NL+"Write the following as the final version:"+NL+NL+"1. A headline - "+bF.hl+NL+"2. A subheadline - "+bF.sb+NL+"3. "+bF.ab+NL+"4. "+bF.pr+NL+"5. "+bF.ct+NL+NL+"Do not use: amazing, passionate, dedicated, seamless, leverage, results-driven."+NL+"Write in plain, direct language.";}
+function cRefs(){var v=g("visitor"),fr=g("fear"),f=fe(),df=g("differentiator");
+return[{l:"If the tone feels off",p:"The tone missed. It should feel "+(f||"[your feeling words]")+" but came across differently."+NL+(fr?"It is leaning toward "+fr+" - pull away from that."+NL:"")+NL+"Rewrite the same content - same structure, adjusted voice only."+NL+(v?"Remember who is reading this: "+v:"")},
+{l:"If the headline is too generic",p:"The headline could apply to anyone."+NL+"Make it specific to this exact project - not the category."+NL+(df?"Lead with this angle: "+df:"Focus on what makes this different.")+NL+"Give me 3 alternative headlines. No generic openers like Welcome to."},
+{l:"If it sounds too formal",p:"This reads too formally."+NL+(v?"The person visiting is: "+v+NL+"Write as if speaking directly to them."+NL:"")+NL+"Rewrite in a more conversational register. Shorten sentences."}];}
+function imgBlk(){if(!S.imo)return"";
+var items=S.imgs.filter(function(x){return x.d||x.u;});if(!items.length)return"";
+if(S.imo==="describe")return NL+NL+"Images - source from Unsplash, find a free photo matching each description:"+NL+items.map(function(x,i){return(i+1)+". "+(x.d||"[describe image]");}).join(NL);
+if(S.imo==="placeholder")return NL+NL+"Images - build coloured placeholder blocks, label each exactly as described:"+NL+items.map(function(x,i){return(i+1)+". "+(x.d||"[describe placeholder]");}).join(NL);
+return NL+NL+"Images - use these exact URLs:"+NL+items.map(function(x,i){return(i+1)+". URL: "+(x.u||"[URL]")+" - Place: "+(x.d||"[where on page]");}).join(NL);}
+function a3(){var f=fe(),fr=g("fear"),ct=g("cta"),df=g("differentiator");
+var st={business:"Structure:"+NL+"1. Hero: "+(df||"[your differentiator]")+" as the headline. CTA: "+(ct||"[your action]")+NL+"2. About: Lead with what I do for clients."+NL+"3. Services: 3 sections - benefit, audience, next step."+NL+"4. Social proof: 2 testimonial placeholders."+NL+"5. Contact: "+(ct||"[your action]")+" as headline. Email link only.",
+personal:"Structure:"+NL+"1. Hero: "+(df||"[your angle]")+" as the opening."+NL+"2. What this is: 2-3 sentences."+NL+"3. The work: placeholder grid."+NL+"4. About: brief, same voice."+NL+"5. How to follow: "+(ct||"[how people engage]"),
+event:"Structure:"+NL+"1. Hero: name, date, location, CTA: "+(ct||"[RSVP]")+NL+"2. What is this: who, what, why."+NL+"3. Why come: "+(df||"[differentiator]")+NL+"4. Details: date, time, location."+NL+"5. "+(ct||"Register")+": prominent."}[S.fork];
+return"Build a single-page website."+NL+NL+"[Paste your content from Stage 2 here before sending this prompt]"+NL+NL+st+imgBlk()+NL+NL+"Design:"+NL+"- Feeling: "+(f||"[your feeling words]")+NL+(fr?"- Avoid: "+fr+NL:"")+"- Clean, readable, mobile-friendly"+NL+"- One file: HTML and CSS together"+NL+NL+"Do not use lorem ipsum. Use the content I provide.";}
+function bRefs(){var f=fe(),fr=g("fear");
+return["The structure is right. Update the visual design:"+NL+"- Colors should feel "+(f||"[your feeling words]")+NL+(fr?"- Avoid anything that makes it look "+fr+NL:"")+"- Use Google Fonts matching the feeling"+NL+"- Add whitespace so the page breathes",
+"Make this fully responsive for mobile:"+NL+"- Navigation collapses on small screens"+NL+"- No text overflows"+NL+"- Buttons large enough to tap",
+"Review the page hierarchy:"+NL+"1. Is the most important message dominant?"+NL+"2. Is the CTA obvious without scrolling?"+NL+"Fix only those."];}
+function aRe(prob){var d=g("description"),v=g("visitor"),df=g("differentiator"),f=fe(),fr=g("fear");
+var m={generic:"The output is too generic - it could apply to almost anyone."+NL+"It needs to feel like it belongs to: "+(d||"[your project]")+NL+NL+(df?"The specific angle to lead with: "+df+NL:"")+(v?"The actual person reading this: "+v+NL:"")+NL+"Rewrite with those specifics front and centre."+NL+"Do not use: professional, passionate, experienced, dedicated, results-driven, seamless.",
+tone:"The structure is right but the tone missed."+NL+"It should feel "+(f||"[your feeling words]")+" but came across differently."+NL+(fr?"Specifically avoid: "+fr+NL:"")+NL+"Rewrite the same content - adjusted voice only."+NL+(v?"Write as if speaking directly to: "+v:""),
+structure:"The structure needs work. Here is what is missing or wrong:"+NL+"[Describe specifically what section is wrong]"+NL+NL+"Keep what is working. Only fix what I described.",
+wrong:"This missed entirely. Tighter constraints:"+NL+NL+(d?"The project is: "+d+NL:"")+(v?"The visitor is: "+v+NL:"")+(df?"The angle: "+df+NL:"")+"Feeling: "+(f||"[feeling words]")+NL+(fr?"Must not feel: "+fr+NL:"")+NL+"Try again from scratch with these as hard constraints."};
+return m[prob]||"";}
+function aTe(){var v=g("visitor"),ct=g("cta"),fr=g("fear");
+return"Review this website for a first-time mobile viewer."+NL+NL+(v?"Visitor: "+v:"")+(ct?NL+"Goal: "+ct:"")+NL+NL+"Tell me:"+NL+"1. Is the purpose clear within 3 seconds?"+NL+"2. Is the main action obvious?"+NL+"3. What would make them leave without acting?"+NL+(fr?"4. Does anything feel "+fr+"?":"")+NL+NL+"Be direct. Top 3 changes only.";}
+document.addEventListener("DOMContentLoaded",function(){
+document.querySelectorAll(".fc").forEach(function(card){card.addEventListener("click",function(){selFork(card.dataset.fork,card);});});
+document.getElementById("fnb").addEventListener("click",function(){goStepper();if(pend){SH.forEach(function(f){if(pend[f])S.flds[f]=pend[f];});if(pend._f)S.feels=pend._f.slice();pend=null;rStg();}});
+document.getElementById("swb").addEventListener("click",doSwitch);
+document.getElementById("bk").addEventListener("click",goBack);
+document.getElementById("nx").addEventListener("click",goNext);
+});
+</script>
+</body>
+</html>
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prompt Coach - Venzaura AI Course</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0f1117;--s1:#1a1d27;--s2:#22263a;--b1:#2e3349;--b2:#3d4260;--t1:#e8eaf6;--t2:#9fa3c0;--t3:#6b6f8a;--tl:#1D9E75;--tl2:#0F6E56;--am:#EF9F27;--r:8px}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t1);font-size:15px;line-height:1.6;min-height:100vh}
+.app{max-width:720px;margin:0 auto;padding:2rem 1.5rem}
+.screen{display:none}.screen.active{display:block}
+.hdr{text-align:center;padding:2rem 0 1.5rem;border-bottom:.5px solid var(--b1);margin-bottom:2rem}
+.hdr h1{font-size:22px;font-weight:600;margin-bottom:4px}
+.hdr p{font-size:13px;color:var(--t2)}
+.logo{display:inline-block;width:36px;height:36px;border-radius:10px;background:var(--tl);color:#fff;font-size:18px;line-height:36px;text-align:center;margin-bottom:12px}
+.fg{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:1.5rem 0}
 .fc{border:.5px solid var(--b1);border-radius:12px;padding:1.2rem;cursor:pointer;transition:all .15s;background:var(--s1)}
 .fc:hover{border-color:var(--b2);background:var(--s2)}
 .fc.sel{border-color:var(--tl);background:var(--s2)}
